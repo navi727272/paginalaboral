@@ -3,52 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Especialistas en Derecho Laboral, Accidentes de Trabajo y Enfermedades Profesionales en Río Gallegos, Santa Cruz. Asesoramiento integral a trabajadores y empleadores.">
-    <meta name="keywords" content="derecho laboral Rio Gallegos, accidentes trabajo Santa Cruz, enfermedades profesionales abogado, prevencion riesgos laborales">
+    <meta name="description" content="Abogado laboral en Río Gallegos especialista en Derecho Laboral, Accidentes de Trabajo y Enfermedades Profesionales. Asesoramiento a trabajadores y empleadores en Santa Cruz.">
+    <meta name="keywords" content="derecho laboral Rio Gallegos, abogado laboral Santa Cruz, accidentes trabajo abogado, enfermedades profesionales ART, estudio juridico laboral, empleados publicos derechos">
     <meta name="robots" content="index, follow">
 
-    <title>Derecho Laboral - Dr. Mario Iván Reyes | Río Gallegos, Santa Cruz</title>
-
+    <title>Derecho Laboral | Abogado Laboral Río Gallegos - Dr. Mario Iván Reyes</title>
     <link rel="canonical" href="https://www.laboralriogallegos.com.ar/derecho-laboral.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemPage",
-      "name": "Áreas de Práctica - Derecho Laboral",
-      "description": "Servicios especializados en derecho laboral, accidentes y enfermedades profesionales",
-      "mainEntity": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de Derecho Laboral",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Derecho Laboral",
-              "description": "Despidos, indemnizaciones, trabajo no registrado, diferencias salariales"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Accidentes y Enfermedades Profesionales",
-              "description": "Reclamos ante ART, incapacidades, rehabilitación profesional"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Prevención de Riesgos Laborales",
-              "description": "Asesoramiento en seguridad e higiene en el trabajo"
-            }
-          }
-        ]
-      }
-    }
-    </script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
@@ -61,6 +21,12 @@
             color: #fff;
             line-height: 1.7;
             font-size: 16px;
+        }
+
+        p, h1, h2, h3, h4, .area-card p, .areas-header p {
+            word-spacing: normal;
+            overflow-wrap: break-word;
+            hyphens: auto;
         }
 
         .header {
@@ -91,18 +57,11 @@
 
         .logo-section h1 {
             color: #fff;
-            font-size: 2.6em;
+            font-size: 2.8em;
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            text-shadow: 
-                0 0 20px rgba(255,255,255,0.4),
-                3px 3px 6px rgba(0,0,0,0.8),
-                -1px -1px 0 rgba(0,0,0,0.5),
-                1px -1px 0 rgba(0,0,0,0.5),
-                -1px 1px 0 rgba(0,0,0,0.5),
-                1px 1px 0 rgba(0,0,0,0.5);
-            filter: brightness(1.2);
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
         }
 
         .logo-section p {
@@ -110,14 +69,7 @@
             font-size: 1.2em;
             font-weight: 500;
             letter-spacing: 1.5px;
-            text-shadow: 
-                0 0 15px rgba(255,255,255,0.3),
-                2px 2px 4px rgba(0,0,0,0.8),
-                -1px -1px 0 rgba(0,0,0,0.3),
-                1px -1px 0 rgba(0,0,0,0.3),
-                -1px 1px 0 rgba(0,0,0,0.3),
-                1px 1px 0 rgba(0,0,0,0.3);
-            filter: brightness(1.1);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
 
         .navbar {
@@ -136,6 +88,7 @@
             display: flex;
             list-style: none;
             justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
         .nav-menu li {
@@ -161,12 +114,17 @@
         }
 
         .hero-derecho {
-            background-image: url('https://rlv.zcache.com/big_rig_red_freight_truck_drivers_art_poster-r7dfef91627e64e4bae9ebf071f5537b3_2uw6g_8byvr_644.webp');
+            background-image: url('https://images.pexels.com/photos/36938808/pexels-photo-36938808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             min-height: 320px;
             position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .hero-derecho {
+                background-attachment: scroll;
+            }
         }
 
         .hero-derecho::before {
@@ -191,7 +149,6 @@
             margin-bottom: 30px;
             backdrop-filter: blur(3px);
             border: 1px solid rgba(255,255,255,0.2);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
         }
 
         .areas-header h2 {
@@ -218,11 +175,15 @@
             gap: 25px;
         }
 
+        @media (max-width: 768px) {
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .area-card {
             background-color: rgba(255, 255, 255, 0.95);
             padding: 30px;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.4);
         }
 
         .area-card h3 {
@@ -249,7 +210,6 @@
             text-align: center;
             backdrop-filter: blur(3px);
             border: 1px solid rgba(255,255,255,0.2);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
         }
 
         .contacto-box h3 {
@@ -272,7 +232,6 @@
             bottom: 25px;
             right: 25px;
             background-color: #25d366;
-            color: white;
             width: 75px;
             height: 75px;
             border-radius: 50%;
@@ -280,7 +239,6 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 42px;
             box-shadow: 0 6px 25px rgba(0,0,0,0.4);
             z-index: 1000;
             transition: transform 0.3s;
@@ -297,13 +255,28 @@
             object-fit: contain;
         }
 
+        /* SEO invisible - solo para motores de búsqueda */
+        .seo-invisible {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         @media (max-width: 768px) {
-            .areas-grid { grid-template-columns: 1fr; }
-            .nav-menu { flex-wrap: wrap; justify-content: center; }
-            .nav-menu li { margin: 8px 15px; }
-            body { font-size: 15px; }
-            .logo-section h1 { 
-                font-size: 2em; 
+            .nav-menu li {
+                margin: 8px 15px;
+            }
+            body {
+                font-size: 15px;
+            }
+            .logo-section h1 {
+                font-size: 2.2em;
                 text-align: center;
                 line-height: 1.3;
             }
@@ -311,25 +284,43 @@
                 display: block;
                 font-size: 1.1em;
             }
-            .logo-section p {
+            .areas-header h2, .areas-header p, .area-card h3 {
                 text-align: center;
             }
-            .areas-header h2 { text-align: center; }
-            .areas-header p { text-align: center; }
-            .area-card h3 { text-align: center; }
-            .area-card p { text-align: justify; }
-            .contacto-box h3 { text-align: center; }
-            .contacto-box p { text-align: center; }
-            .whatsapp-float { width: 65px; height: 65px; font-size: 36px; }
+            .area-card p {
+                text-align: justify;
+            }
+            .contacto-box h3, .contacto-box p {
+                text-align: center;
+            }
+            .whatsapp-float {
+                width: 65px;
+                height: 65px;
+            }
+            .whatsapp-float img {
+                width: 38px;
+                height: 38px;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- SEO INVISIBLE: Contenido técnico para atraer trabajadores camioneros y otros sectores -->
+    <div class="seo-invisible" aria-hidden="true">
+        <h1>Abogado Especializado en Derechos de Camioneros y Transportistas en Río Gallegos</h1>
+        <h2>Asesoramiento Legal para Trabajadores del Transporte de Cargas - Santa Cruz</h2>
+        <p>Estudio jurídico especializado en derecho laboral para camioneros, choferes profesionales de larga distancia, transportistas de carga pesada, conductores de semirremolques, tractocamiones y vehículos de transporte de mercaderías en Río Gallegos, Caleta Olivia, Puerto Deseado, Las Heras, Pico Truncado, Comodoro Rivadavia y toda la provincia de Santa Cruz, Argentina.</p>
+        <p>Servicios legales para camioneros: reclamos laborales por despidos, indemnizaciones, trabajo no registrado, diferencias salariales, horas extras de conducción, accidentes de tránsito laborales, reclamos ante ART por accidentes en ruta, vuelcos de camiones, colisiones durante la jornada laboral, enfermedades profesionales del sector transporte, problemas de columna vertebral, hérnias de disco, lumbalgias, trastornos del sueño, estrés laboral por conducción prolongada, síndrome de la vibración, incapacidades permanentes y temporarias.</p>
+        <p>Derechos específicos de choferes profesionales: descansos obligatorios de 12 horas entre jornadas, licencia anual pagada, horas extras por tiempo de espera, viáticos, peajes, combustible, cumplimiento de normativa CNRT, tiempos máximos de conducción, licencias profesionales categoría E.</p>
+        <p>Normativa aplicable al sector transporte: Ley de Contrato de Trabajo 20.744, Ley de Riesgos del Trabajo 24.557, Convenio Colectivo de Trabajo 40/89, Decreto 911/96, Resoluciones CNRT.</p>
+        <p>Otros trabajadores atendidos: empleados de comercio, obreros de la construcción, trabajadores de la industria petrolera, empleados bancarios, trabajadores de la salud, docentes, trabajadores rurales, empleados públicos municipales y provinciales.</p>
+    </div>
+
     <header class="header">
         <div class="header-content">
             <div class="logo-section">
-                <h1>Dr. Mario Iván Reyes</h1>
+                <h1>Dr. Mario Iván <span>Reyes</span></h1>
                 <p>Derecho Laboral, Accidentes y Enfermedades profesionales</p>
             </div>
         </div>
@@ -352,7 +343,7 @@
     <section class="areas-section">
         <div class="areas-header">
             <h2>Áreas de Práctica</h2>
-            <p>En el Estudio Jurídico brindamos asesoramiento integral en todas las áreas del derecho laboral, accidentes y enfermedades profesionales.</p>
+            <p>En el Estudio Jurídico brindamos asesoramiento integral en todas las áreas del derecho laboral, accidentes y enfermedades profesionales para trabajadores y empleadores en Río Gallegos y toda Santa Cruz.</p>
         </div>
 
         <div class="areas-grid">
@@ -363,23 +354,23 @@
 
             <div class="area-card">
                 <h3>Accidentes y Enfermedades Profesionales</h3>
-                <p>Reclamos ante Aseguradoras de Riesgos del Trabajo (ART) y empleadores por accidentes laborales y enfermedades profesionales. Incapacidades permanentes, prestaciones dinerarias, rehabilitación profesional, recursos y acciones judiciales para revisar el grado de incapacidad.</p>
+                <p>Reclamos ante Aseguradoras de Riesgos del Trabajo (ART) y empleadores por accidentes laborales y enfermedades profesionales. Incapacidades permanentes, prestaciones dinerarias, rehabilitación profesional, recursos y acciones judiciales para revisar el grado de incapacidad. Especialistas en empleados públicos municipales y provinciales.</p>
             </div>
 
             <div class="area-card">
                 <h3>Prevención de Riesgos Laborales</h3>
-                <p>Asesoramiento en prevención de riesgos laborales. Cumplimiento de normativa de seguridad e higiene en el trabajo. Representación en inspecciones y sanciones del Ministerio de Trabajo.</p>
+                <p>Asesoramiento en prevención de riesgos laborales. Cumplimiento de normativa de seguridad e higiene en el trabajo. Representación en inspecciones y sanciones del Ministerio de Trabajo de Santa Cruz y Nación.</p>
             </div>
         </div>
 
         <div class="contacto-box">
             <h3>¿Necesita asesoramiento legal?</h3>
-            <p>→ <a href="contacto.html">Contáctese aquí</a></p>
+            <p>→ <a href="contacto.html">Contáctese aquí para una consulta gratuita</a></p>
         </div>
     </section>
 
-    <a href="https://wa.me/5492966550909" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <a href="https://wa.me/5492966550909" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy">
     </a>
 
 </body>

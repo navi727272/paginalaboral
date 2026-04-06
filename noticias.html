@@ -3,43 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Casos de éxito en Accidentes de Trabajo y Enfermedades Profesionales para Empleados Públicos en Río Gallegos. Revisión de incapacidades laborales y resarcimientos.">
-    <meta name="keywords" content="casos exito empleados publicos Rio Gallegos, accidentes trabajo municipal Santa Cruz, enfermedades profesionales empleados publicos, revision incapacidad laboral">
+    <meta name="description" content="Casos de éxito de abogado laboral en Río Gallegos. Accidentes de Trabajo y Enfermedades Profesionales para Empleados Públicos. Revisión de incapacidades laborales.">
+    <meta name="keywords" content="casos exito abogado laboral Rio Gallegos, accidentes trabajo municipal Santa Cruz, enfermedades profesionales empleados publicos, revision incapacidad laboral, noticias derecho laboral">
     <meta name="robots" content="index, follow">
 
-    <title>Noticias y Casos - Dr. Mario Iván Reyes | Abogado Laboral Río Gallegos</title>
-
+    <title>Noticias y Casos de Éxito | Abogado Laboral Río Gallegos - Dr. Mario Iván Reyes</title>
     <link rel="canonical" href="https://www.laboralriogallegos.com.ar/noticias.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Casos de Éxito - Empleados Públicos | Dr. Mario Iván Reyes",
-      "description": "Casos de éxito en Accidentes de Trabajo y Enfermedades Profesionales para Empleados Públicos Municipales y Provinciales en Río Gallegos, Santa Cruz",
-      "url": "https://www.laboralriogallegos.com.ar/noticias.html",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "Article",
-            "headline": "Revisión de incapacidad laboral: aumento 7,4 veces indemnización trabajador municipal",
-            "description": "Logramos revisión de grado de incapacidad para empleado municipal, aumentando significativamente la indemnización"
-          },
-          {
-            "@type": "Article",
-            "headline": "Condena solidaria contra YPF S.A. por obligaciones laborales",
-            "description": "Condena solidaria contra YPF S.A. por indemnizaciones y multas laborales"
-          },
-          {
-            "@type": "Article",
-            "headline": "Condena contra canal de cable por despido irregular",
-            "description": "Condena por despido sin observar reglamento interno de la empresa"
-          }
-        ]
-      }
-    }
-    </script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
@@ -52,6 +21,12 @@
             color: #fff;
             line-height: 1.7;
             font-size: 16px;
+        }
+
+        p, h1, h2, h3, h4, .noticia-item p, .noticias-sidebar p {
+            word-spacing: normal;
+            overflow-wrap: break-word;
+            hyphens: auto;
         }
 
         .header {
@@ -86,14 +61,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            text-shadow: 
-                0 0 20px rgba(255,255,255,0.4),
-                3px 3px 6px rgba(0,0,0,0.8),
-                -1px -1px 0 rgba(0,0,0,0.5),
-                1px -1px 0 rgba(0,0,0,0.5),
-                -1px 1px 0 rgba(0,0,0,0.5),
-                1px 1px 0 rgba(0,0,0,0.5);
-            filter: brightness(1.2);
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
         }
 
         .logo-section p {
@@ -101,14 +69,7 @@
             font-size: 1.2em;
             font-weight: 500;
             letter-spacing: 1.5px;
-            text-shadow: 
-                0 0 15px rgba(255,255,255,0.3),
-                2px 2px 4px rgba(0,0,0,0.8),
-                -1px -1px 0 rgba(0,0,0,0.3),
-                1px -1px 0 rgba(0,0,0,0.3),
-                -1px 1px 0 rgba(0,0,0,0.3),
-                1px 1px 0 rgba(0,0,0,0.3);
-            filter: brightness(1.1);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
 
         .navbar {
@@ -127,6 +88,7 @@
             display: flex;
             list-style: none;
             justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
         .nav-menu li {
@@ -155,12 +117,16 @@
             background-image: url('https://museumcrush.org/wp-content/uploads/2017/10/Ted-Holloway-Testing-for-Gas-1956.-Gemini-Collection-_-Zurbaran-Trust.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             min-height: 300px;
             display: flex;
             align-items: flex-end;
-            padding: 0;
             position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .hero-noticias {
+                background-attachment: scroll;
+            }
         }
 
         .hero-overlay {
@@ -190,6 +156,7 @@
             padding: 40px 20px;
             display: flex;
             gap: 30px;
+            flex-wrap: wrap;
         }
 
         .noticias-main {
@@ -204,7 +171,6 @@
             height: fit-content;
             backdrop-filter: blur(3px);
             border: 1px solid rgba(255,255,255,0.15);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
         }
 
         .noticias-sidebar h4 {
@@ -236,8 +202,6 @@
             padding: 35px;
             margin-bottom: 20px;
             border-left: 5px solid #4ecdc4;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.4);
         }
 
         .noticia-item h3 {
@@ -262,7 +226,6 @@
             bottom: 25px;
             right: 25px;
             background-color: #25d366;
-            color: white;
             width: 75px;
             height: 75px;
             border-radius: 50%;
@@ -274,7 +237,6 @@
             z-index: 1000;
             transition: transform 0.3s;
             border: 3px solid rgba(255,255,255,0.4);
-            overflow: hidden;
         }
 
         .whatsapp-float:hover {
@@ -288,12 +250,17 @@
         }
 
         @media (max-width: 768px) {
-            .noticias-section { flex-direction: column; }
-            .nav-menu { flex-wrap: wrap; justify-content: center; }
-            .nav-menu li { margin: 8px 15px; }
-            body { font-size: 15px; }
-            .logo-section h1 { 
-                font-size: 2.2em; 
+            .noticias-section {
+                flex-direction: column;
+            }
+            .nav-menu li {
+                margin: 8px 15px;
+            }
+            body {
+                font-size: 15px;
+            }
+            .logo-section h1 {
+                font-size: 2.2em;
                 text-align: center;
                 line-height: 1.3;
             }
@@ -301,13 +268,27 @@
                 display: block;
                 font-size: 1.1em;
             }
-            .hero-content-noticias h2 { text-align: center; }
-            .noticia-item h3 { text-align: center; font-size: 1em; }
-            .noticia-item p { text-align: justify; }
-            .noticias-sidebar h4 { text-align: center; }
-            .noticias-sidebar p { text-align: center; }
-            .whatsapp-float { width: 65px; height: 65px; }
-            .whatsapp-float img { width: 38px; height: 38px; }
+            .hero-content-noticias h2 {
+                text-align: center;
+            }
+            .noticia-item h3 {
+                text-align: center;
+                font-size: 1em;
+            }
+            .noticia-item p {
+                text-align: justify;
+            }
+            .noticias-sidebar h4, .noticias-sidebar p {
+                text-align: center;
+            }
+            .whatsapp-float {
+                width: 65px;
+                height: 65px;
+            }
+            .whatsapp-float img {
+                width: 38px;
+                height: 38px;
+            }
         }
     </style>
 </head>
@@ -337,7 +318,7 @@
     <section class="hero-noticias">
         <div class="hero-overlay">
             <div class="hero-content-noticias">
-                <h2>Noticias</h2>
+                <h2>Noticias y Casos de Éxito</h2>
             </div>
         </div>
     </section>
@@ -346,12 +327,12 @@
         <div class="noticias-main">
             <article class="noticia-item">
                 <h3>REVISIÓN DE INCAPACIDAD LABORAL: AUMENTAMOS LA INDEMNIZACIÓN 7,4 VECES PARA TRABAJADOR MUNICIPAL</h3>
-                <p>Logramos que se revisara el grado de incapacidad determinada por la junta médica y el cálculo del resarcimiento para un trabajador municipal, aumentando aproximadamente 7 veces y media la indemnización que pretendía pagarle el ente comunal en el expediente administrativo. Se advirtieron deficiencias importantes en el cálculo y determinación, por lo que es altamente recomendable que los empleados de la administración pública municipal y provincial hagan revisar los ofrecimientos indemnizatorios por abogados especializados.</p>
+                <p>Logramos que se revisara el grado de incapacidad determinada por la junta médica y el cálculo del resarcimiento para un trabajador municipal, aumentando aproximadamente 7 veces y media la indemnización que pretendía pagarle el ente comunal en el expediente administrativo. Se advirtieron deficiencias importantes en el cálculo y determinación, por lo que es altamente recomendable que los empleados de la administración pública municipal y provincial hagan revisar los ofrecimientos indemnizatorios por abogados especializados en derecho laboral.</p>
             </article>
 
             <article class="noticia-item">
                 <h3>CONDENARON A YPF S.A. DE FORMA SOLIDARIA POR LAS OBLIGACIONES LABORALES DE UNA EMPRESA TRANSPORTISTA</h3>
-                <p>Conseguimos que se condenara de forma solidaria a YPF S.A. a pagar las indemnizaciones por despido y multas laborales impuestas a una empresa transportista de combustible contratada por aquella. A pesar de que YPF negó en sede judicial que fuera su actividad normal y específica el transporte y distribución de combustible -lo que imponía su responsabilidad solidaria a tenor de la Ley laboral- probamos a través de la propia declaración de YPF ante la SEC (Comisión de Mercados y Valores de Estados Unidos) que había afirmado en aquel país dedicarse de forma específica y principal a tales actividades. Ello junto a otras pruebas determino que la empresa fuera condenada a asumir las obligaciones de la empresa transportista que resultaba empleadora, y que con sus incumplimientos produjo el despido indirecto del trabajador.</p>
+                <p>Conseguimos que se condenara de forma solidaria a YPF S.A. a pagar las indemnizaciones por despido y multas laborales impuestas a una empresa transportista de combustible contratada por aquella. A pesar de que YPF negó en sede judicial que fuera su actividad normal y específica el transporte y distribución de combustible -lo que imponía su responsabilidad solidaria a tenor de la Ley laboral- probamos a través de la propia declaración de YPF ante la SEC (Comisión de Mercados y Valores de Estados Unidos) que había afirmado en aquel país dedicarse de forma específica y principal a tales actividades. Ello junto a otras pruebas determinó que la empresa fuera condenada a asumir las obligaciones de la empresa transportista que resultaba empleadora.</p>
             </article>
 
             <article class="noticia-item">
@@ -360,7 +341,7 @@
             </article>
 
             <article class="noticia-item">
-                <h3>SE REVOCARON MULTAS POR TRABAJO NO REGISTRADO IMPUESTAS A UNA COOPERATIVA, POR EL MINISTERIO DE TRABAJO DE LA NACIÓN</h3>
+                <h3>SE REVOCARON MULTAS POR TRABAJO NO REGISTRADO IMPUESTAS A UNA COOPERATIVA POR EL MINISTERIO DE TRABAJO DE LA NACIÓN</h3>
                 <p>A través de dos recursos de queja y apelación logramos que se dejaran sin efecto importantes multas que el Ministerio de Trabajo aplicó a una Cooperativa. En ambos procesos se puso de manifiesto la falta de pruebas, irrespeto al derecho de defensa en sede administrativa y arbitrariedad de la Administración al sancionar a nuestro cliente. Motivo por el cual después de declararse inconstitucional el depósito previo exigido por el Ministerio, se hizo lugar a las apelaciones en todas sus partes.</p>
             </article>
         </div>
@@ -374,8 +355,8 @@
         </aside>
     </section>
 
-    <a href="https://wa.me/5492966550909" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <a href="https://wa.me/5492966550909" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy">
     </a>
 
 </body>
