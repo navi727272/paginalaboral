@@ -23,10 +23,19 @@
             font-size: 16px;
         }
 
-        p, h1, h2, h3, h4, .noticia-item p, .noticias-sidebar p {
+        /* Títulos y subtítulos: SIN guiones */
+        h1, h2, h3, h4, .hero-content-noticias h2, .noticia-item h3 {
+            hyphens: manual;
             word-spacing: normal;
             overflow-wrap: break-word;
+        }
+
+        /* Textos de párrafos largos: CON guiones para evitar espacios enormes */
+        p, .noticia-item p, .noticias-sidebar p {
             hyphens: auto;
+            word-spacing: normal;
+            overflow-wrap: break-word;
+            text-align: justify;
         }
 
         .header {
@@ -217,7 +226,6 @@
             font-size: 1em;
             line-height: 1.9;
             color: #333;
-            text-align: justify;
             font-weight: 400;
         }
 
@@ -272,7 +280,7 @@
                 text-align: center;
             }
             .noticia-item h3 {
-                text-align: center;
+                text-align: left;
                 font-size: 1em;
             }
             .noticia-item p {
@@ -318,7 +326,7 @@
     <section class="hero-noticias">
         <div class="hero-overlay">
             <div class="hero-content-noticias">
-                <h2>Noticias y Casos de Éxito</h2>
+                <h2>NOTICIAS Y CASOS RELEVANTES</h2>
             </div>
         </div>
     </section>

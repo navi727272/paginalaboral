@@ -2,7 +2,7 @@
 <html lang="es-AR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Abogado laboral en Río Gallegos, Santa Cruz. Especialista en Accidentes de Trabajo y Enfermedades Profesionales para Empleados Públicos Municipales y Provinciales. Consulta gratuita.">
     <meta name="keywords" content="abogado laboral Rio Gallegos, abogado laboral Santa Cruz, abogado accidentes de trabajo Rio Gallegos, especialista ART empleados publicos, abogado empleados municipales, enfermedades profesionales abogado, estudio juridico laboral Rio Gallegos Z9400">
     <meta name="author" content="Dr. Mario Iván Reyes">
@@ -36,21 +36,19 @@
             overflow-x: hidden;
         }
 
-        /* Corrección de espaciado en textos */
-        p, h1, h2, h3, h4, .bio-text p, .content-box p, .noticia-item p {
+        /* Títulos y subtítulos: SIN guiones (hyphens: manual) */
+        h1, h2, h3, h4, h5, .noticia-item h5, .hero-text-box h2, .hero-text-actividad h2, .hero-text-actividad p, .noticia-item h3 {
+            hyphens: manual;
             word-spacing: normal;
             overflow-wrap: break-word;
+        }
+
+        /* Textos de párrafos largos: CON guiones (hyphens: auto) para evitar espacios enormes */
+        p, .content-box p, .noticia-item p, .bio-text p, .areas-header p, .area-card p {
             hyphens: auto;
-        }
-        
-        .text-justify {
-            text-align: left;
-        }
-        
-        @media (min-width: 992px) {
-            .text-justify-desktop {
-                text-align: justify;
-            }
+            word-spacing: normal;
+            overflow-wrap: break-word;
+            text-align: justify;
         }
 
         .header {
@@ -471,7 +469,7 @@
                 font-size: 1.1em;
             }
             .hero-text-box h2 {
-                text-align: center;
+                text-align: left;
             }
             .consulta-link {
                 display: block;
