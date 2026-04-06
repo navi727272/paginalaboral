@@ -23,10 +23,19 @@
             font-size: 16px;
         }
 
-        p, h1, h2, h3, h4, .area-card p, .areas-header p {
+        /* Títulos y subtítulos: SIN guiones */
+        h1, h2, h3, h4, .areas-header h2 {
+            hyphens: manual;
             word-spacing: normal;
             overflow-wrap: break-word;
+        }
+
+        /* Textos de párrafos largos: CON guiones */
+        p, .areas-header p, .area-card p {
             hyphens: auto;
+            word-spacing: normal;
+            overflow-wrap: break-word;
+            text-align: justify;
         }
 
         .header {
@@ -166,7 +175,6 @@
             font-size: 1.05em;
             font-weight: 400;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-            text-align: justify;
         }
 
         .areas-grid {
@@ -199,7 +207,6 @@
             line-height: 1.8;
             color: #333;
             font-weight: 400;
-            text-align: justify;
         }
 
         .contacto-box {
@@ -306,7 +313,7 @@
 </head>
 <body>
 
-    <!-- SEO INVISIBLE: Contenido técnico para atraer trabajadores camioneros y otros sectores -->
+    <!-- SEO INVISIBLE: Contenido técnico para atraer trabajadores de diversos sectores -->
     <div class="seo-invisible" aria-hidden="true">
         <h1>Abogado Especializado en Derechos de Camioneros y Transportistas en Río Gallegos</h1>
         <h2>Asesoramiento Legal para Trabajadores del Transporte de Cargas - Santa Cruz</h2>
@@ -343,7 +350,7 @@
     <section class="areas-section">
         <div class="areas-header">
             <h2>Áreas de Práctica</h2>
-            <p>En el Estudio Jurídico brindamos asesoramiento integral en todas las áreas del derecho laboral, accidentes y enfermedades profesionales para trabajadores y empleadores en Río Gallegos y toda Santa Cruz.</p>
+            <p>En el Estudio Jurídico brindamos asesoramiento integral en todas las áreas del derecho laboral, accidentes y enfermedades profesionales para trabajadores y empleadores en la Provincia de Santa Cruz.</p>
         </div>
 
         <div class="areas-grid">
@@ -365,7 +372,7 @@
 
         <div class="contacto-box">
             <h3>¿Necesita asesoramiento legal?</h3>
-            <p>→ <a href="contacto.html">Contáctese aquí para una consulta gratuita</a></p>
+            <p>→ <a href="contacto.html">Contáctese aquí</a></p>
         </div>
     </section>
 
