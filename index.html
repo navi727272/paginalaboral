@@ -45,14 +45,12 @@
             overflow-x: hidden;
         }
 
-        /* Títulos y subtítulos: SIN guiones */
         h1, h2, h3, h4, h5, .noticia-item h5, .hero-text-box h2 {
             hyphens: manual;
             word-spacing: normal;
             overflow-wrap: break-word;
         }
 
-        /* Textos de párrafos largos: CON guiones para evitar espacios enormes */
         p, .content-box p, .noticia-item p {
             hyphens: auto;
             word-spacing: normal;
@@ -304,12 +302,6 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
-        .sidebar-section a {
-            color: #4ecdc4;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
         .content-area {
             flex: 1;
         }
@@ -384,6 +376,14 @@
         .form-group textarea {
             min-height: 100px;
             resize: vertical;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+            background-repeat: no-repeat;
+            background-position: right 14px center;
         }
 
         .btn-submit {
@@ -548,13 +548,13 @@
 
     <div class="main-content">
         <aside class="sidebar">
+            <!-- SOLO TEXTO "FORMULARIO DE CONSULTA" sin hipervínculo, porque el formulario real está debajo -->
             <div class="sidebar-section">
-                <h4>Contacto Directo</h4>
-                <p>📞 2966 420465</p>
-                <p>✉ <a href="mailto:info@reyesyreyes.com.ar">info@reyesyreyes.com.ar</a></p>
-                <p>→ <a href="contacto.html">Formulario de contacto</a></p>
+                <h4>FORMULARIO DE CONSULTA</h4>
+                <p style="font-size:0.9rem;">Complete el siguiente formulario para recibir asesoramiento personalizado.</p>
             </div>
 
+            <!-- FORMULARIO REAL CON EL NUEVO CAMPO DESPLEGABLE "TIPO DE CONSULTA" -->
             <div class="consulta-section">
                 <h4>Realice su consulta en línea</h4>
                 <form action="https://formsubmit.co/info@reyesyreyes.com.ar" method="POST">
@@ -580,11 +580,25 @@
                             <input type="tel" name="telefono" placeholder="Teléfono">
                         </div>
                     </div>
+
+                    <!-- NUEVO CAMPO DESPLEGABLE: TIPO DE CONSULTA (similar a contacto.html) -->
+                    <div class="form-group full" style="margin-bottom: 15px;">
+                        <select name="tipo_consulta" required>
+                            <option value="" disabled selected>-- Seleccione tipo de consulta --</option>
+                            <option value="Consulta general laboral">Consulta general laboral</option>
+                            <option value="Accidente de trabajo">Accidente de trabajo</option>
+                            <option value="Enfermedad profesional">Enfermedad profesional</option>
+                            <option value="Despido / Indemnización">Despido / Indemnización</option>
+                            <option value="Revisión de incapacidad">Revisión de incapacidad</option>
+                            <option value="Consulta empleador/empresa">Consulta empleador/empresa</option>
+                                       </select>
+                    </div>
+
                     <div class="form-group full" style="margin-bottom: 15px;">
                         <input type="text" name="asunto" placeholder="Asunto de consulta">
                     </div>
                     <div class="form-group full" style="margin-bottom: 15px;">
-                        <textarea name="consulta" placeholder="Escriba su consulta aquí..." required></textarea>
+                        <textarea name="consulta" placeholder="Describa su caso o consulta en detalle..." required></textarea>
                     </div>
                     <button type="submit" class="btn-submit">Enviar Consulta</button>
                 </form>
